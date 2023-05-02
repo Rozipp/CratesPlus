@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>plus.crates</groupId>
-    <artifactId>CratesPlus</artifactId>
+    <artifactId>BanCrates</artifactId>
     <description>Free crates plugin built for Bukkit/Spigot.</description>
     <version>5.0-SNAPSHOT-8</version>
 
@@ -43,6 +43,10 @@
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>papermc-repo</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
@@ -56,9 +60,10 @@
             <version>4.1.42.Final</version>
         </dependency>
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.14.2-R0.1-SNAPSHOT</version>
+            <groupId>com.destroystokyo.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.gmail.filoghost</groupId>
